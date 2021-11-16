@@ -1,4 +1,5 @@
-## Running Lafand-MT experiments
+## Running Lafand-MT experiments FOR IGBO
+
 
 1. `bash setup.sh`:
 If you don't have Joey NMT already installed on your system, this file creates a virtual environment called jnmt, clones the joeynmt github page and install the needed requirement. 
