@@ -59,9 +59,9 @@ def main(args):
         learning_rate_min: 0.00000001
         weight_decay: 0.0
         label_smoothing: 0.1
-        batch_size: 4096
+        batch_size: 1024
         batch_type: "token"
-        eval_batch_size: 3600
+        eval_batch_size: 512
         eval_batch_type: "token"
         batch_multiplier: 1
         early_stopping_metric: "ppl"

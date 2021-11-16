@@ -11,4 +11,4 @@ bash scripts/train_sentencepiece.sh en ig /content/drive/MyDrive/lafand-ig/lafan
 #train sentence piece of 20000 vocaulary over en-yo
 bash scripts/train_sentencepiece.sh en ig /content/drive/MyDrive/lafand-ig/lafand-mt/joeytrainer/data/enig/JW/train ./data/enig/spmodel 20000 20k
 #train sentence piece of 40000 vocaulary over en-yo
-bash scripts/train_sentencepiece.sh en ig /content/drive/MyDrive/lafand-ig/lafand-mt/joeytrainer/data/enig/JWLf/train ./data/enig/spmodel 40000 40k
+bash scripts/train_sentencepiece.sh en ig /content/drive/MyDrive/lafand-ig/lafand-mt/joeytrainer/data/enig/JW/train ./data/enig/spmodel 40000 40k

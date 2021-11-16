@@ -1,17 +1,17 @@
 # To encode the dataset using already trained Sentencepiece model
 
 src=$1 #e.g. en, the source language code
-tgt=$2 #e.g. yo, the target language code
+tgt=$2 #e.g. ig, the target language code
 
-datadir=$3 #e.g.data/enyo
-spdir=$datadir/spmodel/ #e.g. data/enyo/spmodel/, the directory containing the already trained sentencepiece model
-spdatadir=$datadir/spdata/ #.e.g. data/enyo/spdata/ #the diretory to save the encoded sentencepiece model
+datadir=$3 #e.g.data/enig
+spdir=$datadir/spmodel/ #e.g. data/enig/spmodel/, the directory containing the already trained sentencepiece model
+spdatadir=$datadir/spdata/ #.e.g. data/enig/spdata/ #the diretory to save the encoded sentencepiece model
 vocab_size=$4
 vocab_name=$5 #the name of the sentencepiece model as used in the sentencepiece.sh file
 
 mkdir -p $spdatadir
 
-for item in JW JWLf Lafand; do
+for item in JW; do
 	data="${datadir}/${item}"
 	wdir=${spdatadir}/${vocab_name}/${item}
 	mkdir -p $wdir
