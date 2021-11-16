@@ -1,5 +1,6 @@
 # To install Sentencepiece with Conda
-#conda install -c conda-forge sentencepiece 
+conda install -c conda-forge sentencepiece 
+
 
 #To train the sentence piece model training and encoding
 src=$1 #e.g. en the source language code
@@ -16,11 +17,11 @@ cat $datadir.$src $datadir.$tgt > $combinedir
 
 mkdir -p $spdir
 #Train the model on Combined english-arabic dataset 
-spm_train --input=$combinedir --model_prefix="$spdir/sp$src$tgt$vocab_name" --vocab_size=$vocab_size --character_coverage=1.0  --max_sentence_length=4096
+sentencepiece/spm_train --input=$combinedir --model_prefix="$spdir/sp$src$tgt$vocab_name" --vocab_size=$vocab_size --character_coverage=1.0  --max_sentence_length=4096
 
 for lang in $src $tgt; do
 	#get the sentencepiece vocabulary from the training data. 
-	spm_encode --model="$spdir/sp$src$tgt$vocab_name.model" --generate_vocabulary < $datadir.$lang > $spdir/vocab.$vocab_name.$lang
+	sentencepiece/spm_encode --model="$spdir/sp$src$tgt$vocab_name.model" --generate_vocabulary < $datadir.$lang > $spdir/vocab.$vocab_name.$lang
 done
 
 
