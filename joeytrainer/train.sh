@@ -1,6 +1,6 @@
 src=en #the source language code
 tgt=ig #the target langauge code
-name=lafand  #the name of the task as used in the createconfig.sh
+name=lafand-en-ig  #the name of the task as used in the createconfig.sh
 cd joeynmt;
 mkdir -p /content/drive/MyDrive/lafand-ig/lafand-mt/joeytrainer/joeynmt/${name}_${src}_${tgt}_transformer/
 
