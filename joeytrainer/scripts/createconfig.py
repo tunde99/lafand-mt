@@ -109,7 +109,7 @@ def main(args):
             ff_size: 2048            # TODO: Increase to 1024 for smaller data.
             dropout: 0.1
     """.format(name=name, model_path=model_path, checkpoint=checkpoint, data_path=data_path, source_language=source_language, target_language=target_language)
-    with open("/content/drive/MyDrive/lafand-ig/lafand-mt/joeytrainer/joeynmt/configs/transformer_{name}.yaml".format(name=name),'w') as f:
+    with open("joeynmt/configs/transformer_{name}.yaml".format(name=name),'w') as f:
         f.write(config)
 
 
