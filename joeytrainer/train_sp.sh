@@ -6,9 +6,9 @@
 #10000 = the vocabulary size
 #10k = vocabulary size literal
 
-#train sentencepiece model of 10000 vocaulary over en-yo
-bash scripts/train_sentencepiece.sh fr wol ./data/frwol/JW/train ./data/frwol/spmodel 10000 10k
-#train sentence piece of 20000 vocaulary over en-yo
-bash scripts/train_sentencepiece.sh fr wol ./data/frwol/JW/train ./data/frwol/spmodel 20000 20k
-#train sentence piece of 40000 vocaulary over en-yo
-bash scripts/train_sentencepiece.sh fr wol ./data/frwol/JW/train ./data/frwol/spmodel 40000 40k
+#train sentencepiece model of 10000 vocaulary over fr-wol
+bash scripts/train_sentencepiece.sh fr wol /content/gdrive/MyDrive/masakhane/lafand/lafand-mt/joeytrainer/data/frwol/JW/train /content/gdrive/MyDrive/masakhane/lafand/lafand-mt/joeytrainer/data/frwol/spmodel 10000 10k
+#train sentence piece of 20000 vocaulary over fr-wol
+bash scripts/train_sentencepiece.sh fr wol /content/gdrive/MyDrive/masakhane/lafand/lafand-mt/joeytrainer/data/frwol/JW/train /content/gdrive/MyDrive/masakhane/lafand/lafand-mt/joeytrainer/data/frwol/spmodel 20000 20k
+#train sentence piece of 40000 vocaulary over fr-wol
+bash scripts/train_sentencepiece.sh fr wol /content/gdrive/MyDrive/masakhane/lafand/lafand-mt/joeytrainer/data/frwol/JW/train /content/gdrive/MyDrive/masakhane/lafand/lafand-mt/joeytrainer/data/frwol/spmodel 40000 40k
