@@ -1,4 +1,4 @@
-## Running Lafand-MT experiments FOR IGBO [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/13yVM4b7T74GDbGwDl0bPT-Ry0S8_rk48?usp=sharing)
+## Running Lafand-MT experiments FOR WOLOF [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1LgnCIHFHXiSBloW4roxjn7lQEQrDCeyG?usp=sharing)
 
 1. `bash install_spm.sh` to install the Sentencepiece model if you don't have it.
 
